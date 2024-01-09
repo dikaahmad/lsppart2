@@ -1,1 +1,1 @@
-aku suka ngoding😘😘
+aku suka dika selamanya cinta mati
