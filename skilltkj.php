@@ -1,1 +1,1 @@
-aku suka nge gay😘😘
+aku suka ngoding😘😘
