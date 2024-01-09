@@ -61,87 +61,84 @@ if (isset($_GET['pesan'])) {
     </div>
   </div>
   <main class="main-content  mt-0">
-    <div class="page-header align-items-start min-vh-100" style="background-image: url('https://images.unsplash.com/photo-1497294815431-9365093b7331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');">
+    <div class="page-header align-items-start min-vh-100" style="background-image: url('http://images.unsplash.com/photo-1497294815431-9365093b7331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');">
       <span class="mask bg-gradient-dark opacity-6"></span>
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-4 col-md-8 col-12 mx-auto">
-            <div class="card z-index-0 fadeIn3 fadeInBottom">
-              <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
-                    <img  src="logolsp.png"  style="display: block; margin-left: auto; margin-right: auto;">
+      <div class="container">
+  
+        <!-- Outer Row -->
+        <div class="row justify-content-center">
+            <div class="col-xl-10 col-lg-12 col-md-9">
+
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        <!-- Nested Row within Card Body -->
+             
+              <!-- Nested Row within Card Body -->
+              <center>
+              <img class="lglsp1" src="logolsp.png" width="150" style="display: block; margin-left: 10px; margin-right: 10px; width: 100px; height: 100px;"></center>
+              <div class="row">
+              
+                            <!-- First Form -->
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <br>
+                                        <h3 class="m-0 font-weight-bold text-primary"><i class="fas fa-fw fa-user"></i>
+                                            Asesi</h3>
+                                    </div>
+                                    <br>
+                                    <form class="user" method="post">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-control-user" name="username"
+                                                placeholder="Username" required="" id="username" autocomplete="off">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-control-user" name="password"
+                                                placeholder="Password" required="" id="password" autocomplete="off">
+                                        </div>
+                                        <div class="form-group">
+                                        </div>
+                                        <center>
+                                        <button class="btn btn-success btn-user btn-block" name="login"
+                                           type="submit"> Login </button> 
+                                           </center>
+                                        <hr>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Second Form -->
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <br>
+                                        <h3 class="m-0 font-weight-bold text-primary"><i class="fas fa-fw fa-user"></i>
+                                            Asesor</h3>
+                                    </div>
+                                    <br>
+                                    <form class="user" method="post">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-control-user" name="username"
+                                                placeholder="Username" required="" id="username" autocomplete="off">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-control-user" name="password"
+                                                placeholder="Password" required="" id="password" autocomplete="off">
+                                        </div>
+                                        <div class="form-group">
+                                        </div>
+                                        <center>
+                                        <button class="btn btn-success btn-user btn-block" name="logindua"
+                                           type="submit"> Login </button> 
+                                           </center> 
+                                        <hr>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="card-body">
-              <form class="user" method="post">
-                  <div class="input-group input-group-outline my-3">
-                    <label class="form-label"></label>
-                    <input type="text" class="form-control" name="username"
-                                                 required="" placeholder="Username" id="username" autocomplete="off">
-                  </div>
-                  <div class="input-group input-group-outline mb-3">
-                    <label class="form-label"></label>
-                    <input type="text" class="form-control " name="password"
-                                                  id="password" placeholder="password" autocomplete="off">
-                  </div>
-                  <div class="input-group input-group-outline mb-3">
-                    <label for="role" class="form-role"></label>
-                    <select class="form-control" name="role" required="">
-                                                <option value="nilaitkj">TKJ</option>
-                                                <option value="dpib">DPIB</option>
-                                                <option value="tkr">TKR</option>
-                                                <option value="tbsm">TBSM</option>
-                                                <option value="tp">TP</option>
-                                                <option value="tlas">TLAS</option>
-                                                <option value="tmi">TMI</option>
-                                                <option value="elin">TEI</option>
-                                            </select>
-                  </div>
-                  <div class="form-check form-switch d-flex align-items-center mb-3">
-                    <input class="form-check-input" type="checkbox" id="rememberMe">
-                    <label class="form-check-label mb-0 ms-2" for="rememberMe">Remember me</label>
-                  </div>
-                  <div class="text-center">
-                    <button type="submit" name="login" class="btn bg-gradient-primary w-100 my-4 mb-2">Login</button>
-                  </div>
-                 
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer position-absolute bottom-2 py-2 w-100">
-        <div class="container">
-          <div class="row align-items-center justify-content-lg-between">
-            <div class="col-12 col-md-6 my-auto">
-              <div class="copyright text-center text-sm text-white text-lg-start">
-                © <script>
-                  document.write(new Date().getFullYear())
-                </script>,
-                made with <i class="fa fa-heart" aria-hidden="true"></i> by
-                <a href="https://www.creative-tim.com" class="font-weight-bold text-white" target="_blank">Creative Tim</a>
-                for a better web.
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com" class="nav-link text-white" target="_blank">Creative Tim</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com/presentation" class="nav-link text-white" target="_blank">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com/blog" class="nav-link text-white" target="_blank">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-white" target="_blank">License</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+
       </footer>
     </div>
   </main>
